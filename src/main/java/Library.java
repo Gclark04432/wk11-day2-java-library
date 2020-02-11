@@ -17,6 +17,8 @@ public class Library {
         if (this.booksCount() < this.capacity) {
             this.books.add(book);
         }
-        else System.out.println("No space available for book");
+        else {
+            System.out.println("No space available in library for "+ book.getTitle());
+        }
     }
 }
