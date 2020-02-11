@@ -23,7 +23,10 @@ public class Library {
     }
 
     public Book remove(Book book) {
-        int bookIndex = books.indexOf(book);
-        return this.books.remove(bookIndex);
+        if (this.booksCount() != 0) {
+            int bookIndex = books.indexOf(book);
+            return this.books.remove(bookIndex);
+        }
+        return null;
     }
 }

@@ -49,4 +49,9 @@ public class LibraryTest {
         library.remove(book2);
         assertEquals(2, library.booksCount());
     }
+
+    @Test
+    public void cantRemoveFromLibraryIfNoBooksAvailable() {
+        assertEquals(null, library.remove(book1));
+    }
 }
