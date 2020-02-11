@@ -21,4 +21,9 @@ public class Library {
             System.out.println("No space available in library for "+ book.getTitle());
         }
     }
+
+    public Book remove(Book book) {
+        int bookIndex = books.indexOf(book);
+        return this.books.remove(bookIndex);
+    }
 }
